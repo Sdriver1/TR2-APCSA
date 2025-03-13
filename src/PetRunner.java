@@ -1,3 +1,5 @@
+import outputs.console;
+
 public class PetRunner {
 	public static void main(String[] args) {
 		Kennel kennel = new Kennel();
@@ -14,8 +16,8 @@ public class PetRunner {
 		console.log(kennel.size());
 
 		// Testing remove method
-		kennel.removePet("Buddy");
-		kennel.removePet("Rex");
+		kennel.removePet("Buddy", "Cat");
+		kennel.removePet("Rex", "LoudDog");
 		console.log(kennel.size());
 
 		// Test searchByName method
@@ -24,5 +26,8 @@ public class PetRunner {
 		console.log(kennel.searchByName("Mittens"));
 		console.log(kennel.searchByName("Rocky"));
 		console.log(kennel.searchByName("Unknown"));
+		
+		kennel.removeAllPets();
+		console.log(kennel.size());
 	}
 }
