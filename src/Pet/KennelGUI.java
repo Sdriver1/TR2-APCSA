@@ -1,3 +1,4 @@
+package Pet;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -157,7 +158,7 @@ public class KennelGUI extends JFrame {
 		panelCheckOut.add(lblNameOut);
 
 		checkOutNameField = new JTextField();
-		checkOutNameField.setBounds(70, 25, 150, 25);
+		checkOutNameField.setBounds(75, 25, 150, 25);
 		panelCheckOut.add(checkOutNameField);
 		checkOutNameField.setColumns(10);
 
