@@ -91,7 +91,7 @@ public class Kennel {
 	}
 
 	private void updateDatabaseFile() {
-		try (BufferedWriter writer = new BufferedWriter(new FileWriter("petsdb.txt", false))) {
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/petsdb.txt", false))) {
 			writer.write("Kennel:");
 			writer.newLine();
 			for (Pet pet : petList) {
